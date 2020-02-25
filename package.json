@@ -1,0 +1,29 @@
+{
+  "name": "postcss-real-variables",
+  "version": "1.0.0",
+  "description": "'A Postcss plugin that fallbacks your CSS variables with native support'",
+  "main": "index.js",
+  "scripts": {
+    "test": "postcss test/style.css -o test/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooskun/postcss-real-variables.git"
+  },
+  "keywords": [
+    "postcss",
+    "plugin",
+    "css-variables",
+    "css-custom-properties",
+    "supports"
+  ],
+  "author": "Coskun Baris, cooskunbaris@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooskun/postcss-real-variables/issues"
+  },
+  "homepage": "https://github.com/cooskun/postcss-real-variables#readme",
+  "devDependencies": {
+    "postcss": "^7.0.27"
+  }
+}
