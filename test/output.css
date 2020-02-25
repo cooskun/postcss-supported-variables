@@ -1,0 +1,40 @@
+:root {
+  --red: coral;
+  --alert-theme: var(--red);
+}
+.alert {
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@supports (--var: lorem) {
+  .alert {
+    background-color: var(--alert-theme);
+  }
+}
+
+@supports not (--var: lorem) {
+  .alert {
+    background-color: coral;
+  }
+}
+
+@supports (--var: lorem) {
+  .button {
+    background-color: var(--red);
+  }
+}
+
+@supports not (--var: lorem) {
+  .button {
+    background-color: coral;
+  }
+}
