@@ -1,7 +1,11 @@
+/* This is a comment */
+@charset "UTF-8";
+
 :root {
   --red: coral;
   --alert-theme: var(--red);
 }
+
 .alert {
   display: block;
 }
@@ -15,26 +19,24 @@
   text-align: center;
 }
 
-@supports (--var: lorem) {
-  .alert {
+@supports (--var: 0){
+
+  .alert{
     background-color: var(--alert-theme);
   }
-}
 
-@supports not (--var: lorem) {
-  .alert {
-    background-color: coral;
-  }
-}
-
-@supports (--var: lorem) {
-  .button {
+  .button{
     background-color: var(--red);
   }
 }
 
-@supports not (--var: lorem) {
-  .button {
+@supports not (--var: 0){
+
+  .alert{
+    background-color: coral;
+  }
+
+  .button{
     background-color: coral;
   }
 }

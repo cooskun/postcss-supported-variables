@@ -1,7 +1,9 @@
+/* This is a comment */
 :root {
   --red: coral;
   --alert-theme: var(--red);
 }
+
 .alert {
   display: block;
   background-color: var(--alert-theme);
