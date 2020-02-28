@@ -1,5 +1,5 @@
 {
-  "name": "postcss-real-variables",
+  "name": "postcss-dynamic-variable-support",
   "version": "1.0.0",
   "description": "'A Postcss plugin that fallbacks your CSS variables with native support'",
   "main": "index.js",
