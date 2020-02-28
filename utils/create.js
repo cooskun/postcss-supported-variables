@@ -12,12 +12,6 @@ const createSupportCondition = selector => {
   const support = createSupportRule()
   const fallback = createNotSupportrule()
 
-  /* const _support = support.append({ selector: selector })
-
-  const _fallback = fallback.append({ selector: selector }) */
-
-  /* return [_support, _fallback] */
-
   return [support, fallback]
 }
 
