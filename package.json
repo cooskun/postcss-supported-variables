@@ -1,5 +1,5 @@
 {
-  "name": "postcss-dynamic-variable-support",
+  "name": "postcss-supported-variables",
   "version": "1.0.0",
   "description": "'A Postcss plugin that fallbacks your CSS variables with native support'",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cooskun/postcss-real-variables.git"
+    "url": "git+https://github.com/cooskun/postcss-supported-variables.git"
   },
   "keywords": [
     "postcss",
@@ -20,9 +20,9 @@
   "author": "Coskun Baris, cooskunbaris@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cooskun/postcss-real-variables/issues"
+    "url": "https://github.com/cooskun/postcss-supported-variables/issues"
   },
-  "homepage": "https://github.com/cooskun/postcss-real-variables#readme",
+  "homepage": "https://github.com/cooskun/postcss-supported-variables#readme",
   "devDependencies": {
     "postcss": "^7.0.27"
   }
