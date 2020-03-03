@@ -59,7 +59,7 @@ supportVariables.process(inputCSS);
 Or use it as a PostCSS plugin
 
 ```javascript
-const input = require('./input.css);
+const input = require('./input.css');
 const postcss = require('postcss');
 const supportVariables = require('postcss-supported-variables');
 
