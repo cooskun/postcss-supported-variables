@@ -27,11 +27,15 @@ PostCSS Supported Variables supports your CSS variables with native CSS support 
 }
 
 @support (--var: 0) {
-  background-color: var(--bg);
+  .button {
+    background-color: var(--bg);
+  }
 }
 
 @support not (--var: 0) {
-  background-color: steelblue;
+  .button {
+    background-color: steelblue;
+  }
 }
 ```
 
@@ -50,8 +54,8 @@ yarn add postcss-supported-variables --dev
 Use it to process your css
 
 ```javascript
-const inputCSS = require('./input.css')
-const supportVariables = require('postcss-supported-variables');
+const inputCSS = require("./input.css");
+const supportVariables = require("postcss-supported-variables");
 
 supportVariables.process(inputCSS);
 ```
@@ -59,13 +63,11 @@ supportVariables.process(inputCSS);
 Or use it as a PostCSS plugin
 
 ```javascript
-const input = require('./input.css');
-const postcss = require('postcss');
-const supportVariables = require('postcss-supported-variables');
+const input = require("./input.css");
+const postcss = require("postcss");
+const supportVariables = require("postcss-supported-variables");
 
-postcss([
-  supportVariables()
-]).process(input);
+postcss([supportVariables()]).process(input);
 ```
 
 Or with config file
@@ -73,8 +75,6 @@ Or with config file
 ```javascript
 // postcss.config.js
 module.exports = {
-  plugins: [
-    require('postcss-supported-variables')
-  ]
-}
+  plugins: [require("postcss-supported-variables")],
+};
 ```
